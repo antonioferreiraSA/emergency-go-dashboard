@@ -10,6 +10,7 @@ import { Actions } from '@paljs/ui/Actions';
 import ContextMenu from '@paljs/ui/ContextMenu';
 import User from '@paljs/ui/User';
 import { breakpointDown } from '@paljs/ui/breakpoints';
+import MainLogo from '../MainLogo.png';
 
 const HeaderStyle = styled.div`
   display: flex;
@@ -115,7 +116,7 @@ const Header: React.FC<HeaderProps> = (props) => {
             {
               content: (
                 <Link href="/">
-                  <a className="logo">Admin Template</a>
+                  <img src="/images/Logo/MainLogo.png" width={200} />
                 </Link>
               ),
             },
@@ -145,30 +146,30 @@ const Header: React.FC<HeaderProps> = (props) => {
           size="Small"
           className="right"
           actions={[
-            {
-              content: (
-                <a
-                  className="left"
-                  href={`https://github.com/paljs/nextjs-admin-template`}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="github">Support us in GitHub</span>
-                  <img src={`https://badgen.net/github/stars/paljs/nextjs-admin-template`} />
-                </a>
-              ),
-            },
-            {
-              content: (
-                <a href="https://discord.gg/NRmdvDxsT8" target="_blank" rel="noreferrer">
-                  <img height="20" src="/discord.svg" alt="slack" />
-                </a>
-              ),
-            },
-            {
-              icon: 'twitter',
-              url: { href: 'https://twitter.com/AhmedElywh', target: '_blank' },
-            },
+            // {
+            //   content: (
+            //     <a
+            //       className="left"
+            //       href={`https://github.com/paljs/nextjs-admin-template`}
+            //       target="_blank"
+            //       rel="noreferrer"
+            //     >
+            //       <span className="github">Support us in GitHub</span>
+            //       <img src={`https://badgen.net/github/stars/paljs/nextjs-admin-template`} />
+            //     </a>
+            //   ),
+            // },
+            // {
+            //   content: (
+            //     <a href="https://discord.gg/NRmdvDxsT8" target="_blank" rel="noreferrer">
+            //       <img height="20" src="/discord.svg" alt="slack" />
+            //     </a>
+            //   ),
+            // },
+            // {
+            //   icon: 'twitter',
+            //   url: { href: 'https://twitter.com/AhmedElywh', target: '_blank' },
+            // },
             {
               content: (
                 <ContextMenu
@@ -182,7 +183,7 @@ const Header: React.FC<HeaderProps> = (props) => {
                   ]}
                   Link={Link}
                 >
-                  <User image="url('/icons/icon-72x72.png')" name="Ahmed Elywa" title="Manger" size="Medium" />
+                  <User image="url('/icons/Logo.png')" name="Antonio Ferreira" title="Manger" size="Medium" />
                 </ContextMenu>
               ),
             },

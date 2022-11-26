@@ -38,6 +38,7 @@
     "url": "https://github.com/paljs/nextjs-admin-template/issues"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
     "@types/node": "16.7.10",
     "@types/react": "17.0.19",
     "@types/react-dom": "17.0.9",
