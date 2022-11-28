@@ -19,7 +19,7 @@ const items: MenuItemType[] = [
     children: [
       {
         title: 'Add Driver',
-        link: { href: '/dashboard' },
+        link: { href: '/add-driver/inputs' },
       },
       {
         title: 'Approved Drivers',
